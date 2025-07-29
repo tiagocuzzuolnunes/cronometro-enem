@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Cronômetro ENEM</title>
+    <script type="module" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="big-container">
+        <h1 class="title">Cronômetro ENEM</h1>
+        <div id="timer-container">
+            <div id="timer-content">
+                <div id="timer-text-container">
+
+                    <div id="timer-text">
+                        <div class="time text" id="minutes">00</div>
+                        <div class="separator text">:</div>
+                        <div class="time text" id="seconds">00</div>
+                    </div>
+                    <div id="hide-time-bar">
+                        <hr id="bar" style="border: 1px solid black;">
+                    </div>
+                </div>
+                <div id="icon-container">
+                    <i id="show-time" class="fa-solid fa-eye"></i>
+                    <i id="hide-time" class="fa-solid fa-eye-slash"></i>
+                </div>
+            </div>
+        </div>
+        <div id="btn-container">
+            <button class="btn" id="playBtn">Início</button>
+            <button class="btn" id="pauseBtn">Pausar</button>
+            <button class="btn" id="resetBtn">Resetar</button>
+        </div>
+        <!-- <div id="question-container">
+            <i id="prev-question" class="fa-solid fa-chevron-left"></i>
+            <a href="questions.html">
+                <p id="question-text">Questão 45</p>
+            </a>
+            <i id="next-question" class="fa-solid fa-chevron-right"></i>
+        </div> -->
+    </div>
+    <div id="flower-container">
+        <img src="flower.svg" id="flower-vector" alt="Flower illustration">
+    </div>
+</body>
+
+</html>
