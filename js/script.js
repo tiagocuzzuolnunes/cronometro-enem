@@ -62,8 +62,8 @@ function pauseTimer() {
 function resetTimer() {
     minutesArea.textContent = "00";
     secondsArea.textContent = "00";
-    elapsedBeforePaused = 0;
     startTime = Date.now();
+    elapsedBeforePaused = 0;
     resetBtn.style.display = 'none';
     pauseTimer();
     updateDisplay()
