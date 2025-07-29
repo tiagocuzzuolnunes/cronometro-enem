@@ -12,6 +12,7 @@ const questionText = document.querySelector("#question-text");
 const timerContainer = document.querySelector("#timer-container");
 const timerContent = document.querySelector("#timer-content");
 const timerText = document.querySelector("#timer-text");
+let questionIndex = 0;
 
 let interval;
 let milisseconds;
@@ -26,6 +27,8 @@ pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", resetTimer);
 hideIcon.addEventListener("click", hideTime);
 showIcon.addEventListener("click", showTime);
+nextQuestionChevron.addEventListener("click", nextQuestion);
+prevQuestionChevron.addEventListener("click", previousQuestion);
 
 function startTimer() {
     if (!isRunning) {
@@ -97,6 +100,24 @@ function showTime() {
     showIcon.style.display = 'none'
     hideIcon.style.display = 'block'
 };
+
+function previousQuestion() {
+    if (questionIndex > 1) {
+        questionIndex--;
+        updateQuestionText();
+    }
+}
+
+function nextQuestion() {
+    if (questionIndex < 90) {
+        questionIndex++;
+        updateQuestionText();
+    }
+}
+
+function updateQuestionText() {
+    questionText.textContent = `Questão ${questionIndex}`;
+}
 
 document.addEventListener("keydown", (event) => {
     if (event.code === 'Space') {
