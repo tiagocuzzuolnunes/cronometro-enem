@@ -62,9 +62,9 @@ function pauseTimer() {
 function resetTimer() {
     minutesArea.textContent = "00";
     secondsArea.textContent = "00";
-    pauseTimer();
     elapsedBeforePaused = 0;
     startTime = 0;
+    pauseTimer();
     updateDisplay()
     resetBtn.style.display = 'none';
 };
