@@ -60,6 +60,7 @@ a {
 .btn {
     border: none;
     font-family: 'Fraunces', serif;
+    color: black;
     font-size: 22px;
     width: 120px;
     height: 70px;

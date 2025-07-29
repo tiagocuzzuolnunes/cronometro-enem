@@ -63,10 +63,10 @@ function resetTimer() {
     minutesArea.textContent = "00";
     secondsArea.textContent = "00";
     elapsedBeforePaused = 0;
-    startTime = 0;
+    startTime = Date.now();
+    resetBtn.style.display = 'none';
     pauseTimer();
     updateDisplay()
-    resetBtn.style.display = 'none';
 };
 
 function updateDisplay() {
